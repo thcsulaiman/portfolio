@@ -12,6 +12,7 @@ body {
   font-style: normal;
   max-width: 1400px;
   margin: auto;
+  
 }
 
 html {
@@ -24,12 +25,7 @@ html {
   right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10000;
   transition: right 0.3s ease;
-}
-
-.sticky-nav:hover {
-  right: 0; /* Slide in when hovered */
 }
 
 .sticky-nav ul {
@@ -83,7 +79,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 7vw;
+  height: 7vh;
 }
 
 .nav-links {
@@ -337,7 +333,7 @@ section {
   text-align: center;
 }
 
- /* Experiance Sections  */
+ /* Experience Sections  */
 
  .experience-sub-tittle{
   color: rgb(58, 58, 58);
