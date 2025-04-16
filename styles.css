@@ -52,9 +52,7 @@ html {
 }
 
 .sticky-nav li:hover {
-  background-color: black;
-  color: white;
-  transform: scale(1.05);
+  transform: scale(1.55);
 }
 
 .sticky-nav li.active {
