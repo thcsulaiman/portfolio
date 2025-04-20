@@ -12,6 +12,7 @@ body {
   font-style: normal;
   max-width: 1400px;
   margin: auto;
+  
 
 }
 
@@ -21,48 +22,49 @@ html {
 
 .sticky-nav {
   position: fixed;
-  width: 175px;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
+  width: fit-content;
+  bottom: 0px;
   transition: right 0.3s ease;
-}
-
-.sticky-nav:hover{
-  z-index: 100000;
+  z-index: 10000;
+  background-color: #3e3e3e;
+  padding: 14px 20px;
+  border-radius: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sticky-nav ul {
-  width: 100%;
+  width: fit-content; /* only as wide as its content */
+  margin: 0 auto;     /* center horizontally */
   display: flex;
-  flex-direction: column;
   list-style: none;
   padding: 0;
-  margin: 0;
-  gap: 2.5rem;
+  gap: 1rem;
   border-radius: 0.5rem;
 }
 
+
 .sticky-nav li {
-  padding: 0.5rem 0;
+  padding: 1rem .9rem;
   border-radius: 0.375rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #c0bebe;
+  border: 1px solid #4E4E4E;
+  
 }
 
 .sticky-nav li:hover {
-  background-color: #0b7cbd;
-  color: white;
-  font-weight: 600;
+  color: black;
+background-color: #FFF083;
 }
 
 
 
 .sticky-nav li.active {
-  background-color: #4099CC;
-  color: white;
   font-weight: bold;
+  border: 1px solid #ebd320;
   box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -390,7 +392,7 @@ article .icon {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;
-  
+
 
 }
 
