@@ -43,3 +43,17 @@ function toggleMenu() {
     });
   });
 
+
+
+// hover z-index
+// const stickyNav = document.querySelector('.sticky-nav');
+// const items = stickyNav.querySelectorAll('li');
+
+// items.forEach(item => {
+//   item.addEventListener('mouseenter', () => {
+//     stickyNav.style.zIndex = '10';
+//   });
+//   item.addEventListener('mouseleave', () => {
+//     stickyNav.style.zIndex = '0';
+//   });
+// });

@@ -12,7 +12,7 @@ body {
   font-style: normal;
   max-width: 1400px;
   margin: auto;
-  
+
 }
 
 html {
@@ -26,6 +26,10 @@ html {
   top: 50%;
   transform: translateY(-50%);
   transition: right 0.3s ease;
+}
+
+.sticky-nav:hover{
+  z-index: 100000;
 }
 
 .sticky-nav ul {
@@ -48,14 +52,18 @@ html {
 }
 
 .sticky-nav li:hover {
-  transform: scale(1.55);
+  background-color: #0b7cbd;
+  color: white;
+  font-weight: 600;
 }
 
+
+
 .sticky-nav li.active {
-  background-color: #022963;
+  background-color: #4099CC;
   color: white;
   font-weight: bold;
-  transform: scale(1.1);
+  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -189,6 +197,7 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 
 
 /* Sections */
@@ -325,52 +334,64 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
   flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  color: #4099cc;
+
 }
 
- /* Experience Sections  */
+/* Experience Sections  */
 
- .experience-sub-tittle{
+.experience-sub-tittle {
   color: rgb(58, 58, 58);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
- }
+}
 
- .experience-details-container{
+.experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
- }
-article{
+}
+
+article {
   display: flex;
   width: 10rem;
   gap: 1rem;
 }
- .article-container{
+
+.article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
- 
- }
 
-article .icon{
+}
+
+article .icon {
   cursor: default;
 }
 
 /* Project */
 
-.color-container{
+.color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: rgba(250, 250, 250, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  
+
 }
 
 .project-img {
@@ -381,21 +402,21 @@ article .icon{
   object-fit: cover;
 }
 
-.project-title{
+.project-title {
   margin: 1rem;
   color: black;
 }
 
 /* contact */
 
-#contact{
+#contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
 
-.contact-info-upper-container{
+.contact-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
@@ -405,7 +426,7 @@ article .icon{
   padding: 0.5rem;
 }
 
-.contact-info-container{
+.contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,26 +434,26 @@ article .icon{
   margin: 1rem;
 }
 
-.contact-info-container p{
+.contact-info-container p {
   font-size: larger;
 }
 
-.contact-icon{
-  cursor:default;
+.contact-icon {
+  cursor: default;
 }
 
-.email-icon{
+.email-icon {
   height: 2.5rem;
 }
 
 /* Footer */
 
-footer{
+footer {
   height: 26vh;
   margin: 0 1rem;
 }
 
-footer p{
+footer p {
   text-align: center;
-  
+
 }
