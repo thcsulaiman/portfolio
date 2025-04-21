@@ -27,8 +27,8 @@ html {
   transition: right 0.3s ease;
   z-index: 10000;
   background-color: #3e3e3e;
-  padding: 14px 20px;
-  border-radius: 15px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -45,7 +45,7 @@ html {
 
 
 .sticky-nav li {
-  padding: 1rem .9rem;
+  padding: .6rem .7rem;
   border-radius: 0.375rem;
   text-align: center;
   cursor: pointer;
@@ -63,8 +63,9 @@ background-color: #FFF083;
 
 
 .sticky-nav li.active {
+  color: #FFF083;
   font-weight: bold;
-  border: 1px solid #ebd320;
+  border: 1px solid #FFF083;
   box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.2);
 }
 
